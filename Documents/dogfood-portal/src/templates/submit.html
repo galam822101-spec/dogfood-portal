@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Project - DOGFOOD 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 p-8">
+    <div class="max-w-xl mx-auto bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+        <h1 class="text-2xl font-bold mb-4">Submit Your Project</h1>
+        <form action="/projects/new" method="POST" class="space-y-4">
+            <div>
+                <label class="block text-sm font-medium text-gray-700">Project Title</label>
+                <input type="text" name="title" required class="w-full mt-1 border border-gray-300 rounded-lg p-2">
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700">Summary</label>
+                <input type="text" name="summary" class="w-full mt-1 border border-gray-300 rounded-lg p-2">
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700">Repository URL</label>
+                <input type="url" name="repo_url" class="w-full mt-1 border border-gray-300 rounded-lg p-2">
+            </div>
+            <button type="submit" class="bg-indigo-600 text-white px-4 py-2 rounded-lg font-medium">Submit Project</button>
+        </form>
+        <div class="mt-4">
+            <a href="/" class="text-sm text-indigo-600 hover:underline">&larr; Back to Gallery</a>
+        </div>
+    </div>
+</body>
+</html>
